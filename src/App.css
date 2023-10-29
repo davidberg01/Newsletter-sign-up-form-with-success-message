@@ -1,14 +1,16 @@
-body {
-  background-color: #0f0f0f;
-}
-form {
-  width: 300px;
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
+
+.attribution { margin-top:20px;font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+.screen {
+  width: auto;
+  height: auto;
+  padding: 20px 30px;
+  background-color: white;
+  border-radius: 15px;
 }
 
-button {
-  margin: 20px 0px;
-  padding: 20px;
+.screen-content{
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }

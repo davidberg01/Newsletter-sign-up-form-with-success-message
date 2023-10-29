@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+.sign_up {
+	display: inline-flex;
+	flex-direction: column;
+	gap: 25px;
+	width: 400px;
+
+}
+form {
+	display: inline-flex;
+	flex-direction: column;
+	font-size: 16px;
+}
+ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+li {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	font-size: 16px;
+}
+
+h1 {
+	font-size: 50px;
+	font-family: 'Roboto', sans-serif;
+}
+label {
+	font-weight: 400;
+
+}
+input {
+	border: solid 1px hsl(231, 7%, 60%);
+	border-radius: 10px;
+	height: 50px;
+	padding: 10px 20px;
+	color: hsl(231, 7%, 60%);
+	font-size: 16px;
+	margin-top: 10px;
+	width: 95%;
+}
+
+button {
+	background-color: hsl(234, 29%, 20%);
+	color: hsl(0, 0%, 100%);
+	border: none;
+	border-radius: 10px;
+	height: 50px;
+	font-size: 16px;
+	font-weight: 700;
+	width: 95%;
+}
