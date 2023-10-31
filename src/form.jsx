@@ -1,24 +1,24 @@
 import './form.css'
 import icon_list from'./assets/images/icon-list.svg'
-function Sign_up() {
-  return (
-<div className="sign_up">
-    <h1>Stay updated!</h1>
+import React, { useState } from 'react';
+import Sign_up from './sign-up.jsx';
+import Sign_end from './sign-end.jsx';
+function Form () {
+    const [RegisterOn,setRegisterOn] = useState('false');
+    const [Email,setEmail] = useState('');
+    const changeState = (novoValor,novoEmail) =>{
+        setRegisterOn(novoValor);
+        setEmail(novoEmail)
 
-    <p>Join 60,000+ product managers receiving monthly updates on:</p>
-    <ul>
-    <li><img src={icon_list}/>Product discovery and building what matters</li>
-    <li><img src={icon_list}/>Measuring to ensure updates are a success</li>
-    <li><img src={icon_list}/>And much more!</li>
-    </ul>
-    <form>
-    <label for="email">Email address</label>
-    <input id="email" name="email" value="email@company.com"/>
-    </form>
-    <button >Subscribe to monthly newsletter</button>
-    </div>
-  );
+
+    };
+    if (RegisterOn == 'true' ){
+        return <Sign_end varEmail={Email} changeState={changeState}/>;
+        
+    };
+    return <Sign_up changeState={changeState} />
+
 }
 
-export default Sign_up;
+export default Form;
 
